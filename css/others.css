@@ -26,10 +26,16 @@
   padding-top: 3rem;
 }
 
-.about-paragraph {
+.my-about-text-wrapper {
   text-align: justify;
   text-justify: inter-word;
   text-align-last: left;
+}
+
+.about-paragraph {
+  /* text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left; */
   padding-bottom: 1rem;
 }
 
@@ -95,7 +101,7 @@
 }
 
 .contact-buttons button {
-  margin: 2rem auto;
+  margin: 2rem 0;
 }
 
 /* ======================================================================== Login Page */
