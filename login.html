@@ -1,0 +1,210 @@
+<!-- ********************************************** 
+- Developed by: Arjun Dhakal
+- Date: 2023-02-01
+--  *********************************************** -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,400&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="Images/favicon.png" />
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/others.css" />
+  </head>
+  <body>
+    <!-- ============================================================================ Title and Navigation bar -->
+    <header>
+      <nav class="my-navbar-bg navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid my-navbar-header">
+          <a class="navbar-brand" href="#">
+            <div class="neon-wrapper">
+              <img
+                class="my-logo-icon"
+                src="Images/logo.png"
+                alt="logo image"
+              />
+              <span class="logo-txt">ABC Restaurant</span>
+              <span class="gradient"></span>
+              <span class="dodge"></span>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu-breakfast.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================================================================ category -->
+    <h1 class="my-login-Header">Login</h1>
+    <section id="contact-us-section" class="container-fluid">
+      <div class="container second-wrapper">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <form id="form-login" action="msg-login.html" method="get">
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2">
+                <input
+                  type="user-id"
+                  id="user-id"
+                  placeholder="user"
+                  class="form-control"
+                  required
+                />
+                <label for="user-id" class="form-label">* User ID:</label>
+              </div>
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="password"
+                  class="form-control"
+                  required
+                />
+                <label for="password" class="form-label">* Password:</label>
+              </div>
+              <!-- ------------------------------------------ -->
+
+              <div class="login-buttons">
+                <button type="button" class="my-btn" onclick="history.back()">
+                  Cancel
+                </button>
+                <button type="reset" class="my-btn">Reset</button>
+                <button type="submit" class="my-btn">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================================ Footer-->
+    <footer id="my-footer" class="container-fluid">
+      <div class="row">
+        <div class="my-location col-lg-4 col-sm-12 my-footer-column">
+          <h3><span>Location</span></h3>
+          <img class="my-footer-logo-icon" src="Images/logo.png" alt="log" />
+          <p>1234 Street Name</p>
+          <p>Montreal, QC</p>
+          <p>Postal Code: A1B 2D3</p>
+        </div>
+        <div class="my-links col-lg-4 col-sm-12 my-footer-column">
+          <h3><span>Links</span></h3>
+          <li><a class="my-footer-nav-link" href="index.html">Home</a></li>
+          <li>
+            <a class="my-footer-nav-link" href="menu-breakfast.html">Menu</a>
+          </li>
+          <li><a class="my-footer-nav-link" href="about.html">About Us</a></li>
+          <li>
+            <a class="my-footer-nav-link current" href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <li><a class="my-footer-nav-link" href="login.html">Log In</a></li>
+        </div>
+        <div class="my-contact col-lg-4 col-sm-12 my-footer-column">
+          <h3><span>Contact Us</span></h3>
+          <div class="all-icons">
+            <span class="phone"
+              ><img
+                class="contact-icons"
+                src="Images/phone.png"
+                alt="phone icon"
+              />
+              <p>+1 514 123 4567</p></span
+            >
+            <span class="email">
+              <img
+                class="contact-icons"
+                src="Images/email.png"
+                alt="envelope icon"
+              />
+              <p>info@abd.com</p>
+            </span>
+            <span class="social-media">
+              <img
+                class="contact-icons"
+                src="Images/facebook.png"
+                alt="instagram icon"
+              />
+              <img
+                class="contact-icons"
+                src="Images/instagram.png"
+                alt="instagram icon"
+              />
+              <img
+                class="contact-icons"
+                src="Images/twitter.png"
+                alt="twitter icon"
+              />
+              <img
+                class="contact-icons"
+                src="Images/linkedin.png"
+                alt="linkedin icon"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-copyright row">
+        <hr />
+        <p>Copyright &copy; 2023 Arjun Dhakal - All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

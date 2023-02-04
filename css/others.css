@@ -1,0 +1,153 @@
+/************************************************ 
+* Developed by: Arjun Dhakal
+* Date: 2023-02-01
+*************************************************/
+/* ============================================================================ About Us Page */
+.my-about-hero-container {
+  min-height: 85vh;
+  background-image: url(../Images/about-us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px #222831ab;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.my-about-hero-container:hover {
+  box-shadow: none;
+}
+
+/* ----------------------------------------------- About us text */
+.second-wrapper {
+  padding-top: 3rem;
+}
+
+.about-paragraph {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+  padding-bottom: 1rem;
+}
+
+/* ------------------------------------------------ Testimonials */
+
+#testimonials {
+  background-color: var(--bg-color2);
+  padding: 3rem;
+  text-align: center;
+}
+.my-carosel-container {
+  width: min(95%, 900px);
+  margin: 2rem auto;
+}
+
+.testimonial-img-container {
+  margin: 0 auto;
+  width: 25%;
+}
+.testimonial-img-container img {
+  border-radius: 50%;
+  border: solid 1px var(--col-medium);
+}
+
+.carousel-indicators {
+  bottom: -4rem;
+}
+.carousel-indicators [data-bs-target] {
+  width: 60px;
+  height: 10px;
+  background-color: var(--bg-color1);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: var(--bg-color1);
+}
+.carousel-control-next-icon {
+  position: relative;
+  left: 4rem;
+}
+.carousel-control-prev-icon {
+  position: relative;
+  left: -4rem;
+}
+
+/* ======================================================================== Contact Page */
+.my-contact-Header {
+  margin: 10rem auto 1rem;
+  text-align: center;
+}
+
+#contact-us-section .second-wrapper {
+  padding-top: 0;
+}
+.second-wrapper p {
+  text-align: center;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-buttons button {
+  margin: 2rem auto;
+}
+
+/* ======================================================================== Login Page */
+.my-login-Header {
+  margin: 10rem auto 1rem;
+  text-align: center;
+}
+
+#login-section .second-wrapper {
+  padding-top: 0;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-buttons button {
+  margin: 2rem 0 15rem;
+}
+
+/* ======================================================================== reservation Page */
+.form-legend {
+  font-size: large;
+}
+.radio-btn {
+  padding-bottom: 1rem;
+}
+.reservation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation-buttons button {
+  margin: 2rem 0;
+}
+
+/* ======================================================================== msg Page */
+
+.my-massage-Header {
+  margin: 10rem auto 1rem;
+  text-align: center;
+}
+
+#login-section .second-wrapper {
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.close-btn-wrapper {
+  margin: 2rem 0 15rem;
+  text-align: center;
+}

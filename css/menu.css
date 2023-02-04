@@ -1,0 +1,86 @@
+/************************************************ 
+* Developed by: Arjun Dhakal
+* Date: 2023-02-01
+*************************************************/
+/* ====================================================================================  menu first page */
+/* ----------------------------------------------------- menu catagory */
+.my-cat-title {
+  margin: 10rem auto 1rem;
+  text-align: center;
+}
+
+#menu-category-section {
+  margin: 0 auto;
+  padding: 0 rem;
+  text-align: center;
+  background-color: var(--bg-color1);
+}
+
+.second-wrapper {
+  margin: 0 auto;
+  padding: 1px 0;
+}
+
+.my-cat-list {
+  padding: 0;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.my-cat-list a {
+  flex-basis: 120px;
+  padding: 5px 0;
+}
+
+.my-cat-list .current {
+  color: var(--col-hover);
+  border: 1px solid var(--col-heavy);
+  filter: brightness(150%);
+}
+
+/* Menu details */
+.food-item-name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-name,
+.food-price {
+  font-weight: 600;
+}
+
+.food-description {
+  border-bottom: solid 1px var(--col-heavy);
+}
+/* ----------------------------------------------------- images */
+.my-menu-food-images {
+  width: 100%;
+  text-align: center;
+}
+
+.my-menu-food-images img {
+  border-color: var(--col-medium);
+  width: 98%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  filter: brightness(40%);
+  transition: transform 0.2s filter 0.1s;
+}
+
+.col-sm-6 {
+  padding: 6px 1px;
+  justify-content: center;
+}
+
+.my-menu-food-images img:hover {
+  transform: scale(1.04);
+  filter: brightness(120%);
+}
+
+@media (max-width: 599px) {
+  /* .my-cat-list {
+    display: inline-block; */
+}

@@ -1,0 +1,481 @@
+/************************************************ 
+* Developed by: Arjun Dhakal
+* Date: 2023-01-29
+*************************************************/
+/* ==================================================================== Variables  */
+:root {
+  /* -------------------------------------------- font colors */
+  --col-heavy: #222831;
+  --col-medium: #828991;
+  --col-light: #eeeeee;
+  --col-hover: rgb(124, 90, 4);
+  /* --------------------------------------- background colors */
+  --bg-color1: #222831;
+  --bg-color2: #c9d6df;
+  --bg-color-btn: #eb455f;
+
+  /* -------------------------------------------- font familys */
+  --font1: "Montserrat", sans-serif;
+  --font2: "Roboto", sans-serif;
+}
+
+/* ======================================================== General/ Global Attributes */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color2);
+}
+.second-wrapper {
+  width: min(95%, 1400px);
+}
+
+/* ========================================================typography and color */
+body {
+  font-family: var(--font1);
+  line-height: 1.5;
+  color: var(--col-heavy);
+}
+
+h1 {
+  font-family: var(--font1);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+h2 {
+  font-family: var(--font1);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font1);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* ========================================================== Title and Navigation bar */
+
+/* navigation bar */
+.my-navbar-bg {
+  background: var(--bg-color1);
+  padding: 0 2rem;
+}
+
+.my-navbar-header {
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+/* dimension of logo with title in nav bar */
+.my-logo-icon {
+  width: 5rem;
+  height: 5rem;
+}
+/* modifying the default toggler of bootstrap: 1. removing the border before click */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: brightness(200%);
+}
+/* modifying the default toggler of bootstrap: 2. miminizing the default spread-radius and color when clicked*/
+.navbar-toggler:focus {
+  /*box-shadow: offset-x | offset-y | blur radius | spread-radius | color*/
+  box-shadow: 0 0 0 0.05rem var(--col-medium);
+}
+
+.nav-link {
+  /* margin-left: 0.75rem; */
+  font-family: var(--font2);
+  color: var(--col-medium);
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--col-hover);
+  border: 1px solid var(--col-heavy);
+  filter: brightness(150%);
+}
+
+.nav-item .current {
+  color: var(--col-hover);
+  border: 1px solid var(--col-heavy);
+  filter: brightness(150%);
+}
+
+/* ========================================================== text animantion */
+.neon-wrapper {
+  height: 100%;
+  align-items: center;
+  background-color: var(--col-heavy);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.logo-txt {
+  color: var(--col-light);
+  font-size: 30px;
+  font-weight: 900;
+  font-family: var(--font2);
+}
+
+.logo-txt::before {
+  content: "ABC Restaurant";
+  position: absolute;
+  mix-blend-mode: difference;
+  filter: blur(2px);
+}
+
+.gradient {
+  background: linear-gradient(
+    114.5793deg,
+    rgb(121, 122, 121) 48.92708%,
+    rgb(167, 167, 159) 97.84375%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.dodge {
+  background: radial-gradient(circle, white, #292b2c 25%) center/25% 25%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+
+  mix-blend-mode: color-dodge;
+  animation: dodge-area 4s linear infinite;
+}
+
+@keyframes dodge-area {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+.neon-wrapper {
+  display: inline-flex;
+  filter: brightness(130%);
+  overflow: hidden;
+}
+/* ========================================================== footer  */
+#my-footer {
+  background: var(--bg-color1);
+  color: var(--col-medium);
+  position: relative;
+}
+#my-footer .row {
+  margin: 0 1.25rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/* for screen size greater than that of smart phone width of footer column: fit-content */
+@media screen and (min-width: 700px) {
+  .my-footer-column {
+    width: fit-content;
+  }
+}
+
+#my-footer h3 span {
+  width: fit-content;
+  border-bottom: 1px solid var(--col-medium);
+}
+
+#my-footer h3 {
+  font-family: var(--font2);
+  padding: 2rem 0 1rem;
+  filter: brightness(130%);
+}
+
+.my-footer-column {
+  padding: 0;
+  list-style: none;
+}
+
+.my-footer-logo-icon {
+  width: 4.5rem;
+  height: 4.5.5rem;
+  margin-bottom: 0.5rem;
+  filter: brightness(300%);
+}
+
+.my-location p {
+  margin: 0.2rem 0 0;
+}
+
+.my-footer-nav-link {
+  text-decoration: none;
+  color: inherit;
+  line-height: 2;
+}
+.my-footer-nav-link:hover {
+  color: var(--col-hover);
+  font-weight: 600;
+  filter: brightness(150%);
+  padding: 0.25rem;
+  border: 1px solid var(--col-medium);
+}
+.contact-icons {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(80%);
+}
+
+.phone,
+.email {
+  display: flex;
+  justify-content: center;
+}
+
+.phone p,
+.email p {
+  padding: 0.25rem 1rem 0.25rem;
+  margin: 0 0 1rem;
+}
+
+.social-media .contact-icons {
+  margin: 0 0.4rem 2rem;
+
+  color: white;
+  filter: brightness(80%);
+}
+
+.my-copyright p {
+  font-size: small;
+}
+
+hr {
+  width: 25%;
+  border: 0;
+  border-bottom: 1px solid var(--col-medium);
+  margin: 2px auto;
+}
+/* ==================================================================================== Home page */
+/* ------------------------------------------ Hero image */
+.my-hero-container {
+  min-height: 85vh;
+  background-image: url(../Images/hero$.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px #222831ab;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  animation: change 10s infinite ease-in-out;
+}
+
+.my-hero-container:hover {
+  box-shadow: none;
+}
+
+.tagline {
+  margin-bottom: 2rem;
+}
+/* .tagline h1 { 
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+*/
+
+/* for all buttons */
+.my-btn {
+  background: var(--bg-color-btn);
+  color: var(--col-light);
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--col-medium);
+}
+.my-btn:hover {
+  color: var(--col-hover);
+  filter: brightness(70%);
+}
+
+@keyframes change {
+  0% {
+    background-image: url(../Images/hero1.jpg);
+  }
+  20% {
+    background-image: url(../Images/hero2.jpg);
+  }
+  40% {
+    background-image: url(../Images/hero3.jpg);
+  }
+  60% {
+    background-image: url(../Images/hero4.jpg);
+  }
+  80% {
+    background-image: url(../Images/hero5.jpg);
+  }
+  100% {
+    background-image: url(../Images/hero6.jpg);
+  }
+}
+
+/* ------------------------------------------  about us */
+#my-about-section {
+  background-color: var(--bg-color1);
+  padding: 3rem 0;
+  color: var(--col-medium);
+}
+
+/*left part */
+.my-text-wrapper {
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+@media screen and (min-width: 699px) {
+  .my-text-wrapper {
+    padding-right: 2rem;
+  }
+}
+
+.my-text-wrapper h1 {
+  margin-bottom: 2rem;
+}
+
+.my-text-wrapper p {
+  margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*right part */
+
+.my-image-wrapper {
+  padding: 0;
+
+  text-align: center;
+}
+
+.my-image-wrapper img {
+  width: 100%;
+  border: solid 1px var(--col-light);
+}
+
+/* ------------------------------------------   special cusines */
+#special-cusine {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: var(--bg-color2);
+  color: var(--col-heavy);
+}
+
+/*left part*/
+.special-cusine-header {
+  text-align: left;
+  padding: 0 0 2rem 0;
+}
+
+.special-cusine-header h1 {
+  margin-bottom: 2rem;
+}
+
+.special-cusine-header h2 {
+  margin-bottom: 1rem;
+}
+
+.special-cusine-list {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.special-cusine-header p {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 699px) {
+  .special-cusine-header {
+    padding-right: 2rem;
+  }
+}
+
+/*right part*/
+
+.my-carausel-wrapper {
+  padding: 0;
+}
+
+.special-cusine-img-container img {
+  border: solid 1px var(--col-medium);
+}
+
+.carousel-indicators {
+  bottom: -2rem;
+}
+.carousel-indicators [data-bs-target] {
+  width: 60px;
+  height: 10px;
+  background-color: var(--bg-color1);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: relative;
+  background-color: var(--bg-color1);
+  filter: brightness(50%);
+  top: -2rem;
+}
+
+/* ------------------------------------------  opening hours */
+#my-opening-hours-section {
+  padding: 3rem 0;
+  background-color: var(--bg-color1);
+  color: var(--col-medium);
+}
+
+.my-opening-hours-text-wrapper {
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+@media screen and (min-width: 699px) {
+  .my-opening-hours-text-wrapper {
+    padding-right: 2rem;
+  }
+}
+
+.my-opening-hours-text-wrapper h1 {
+  margin-bottom: 2rem;
+}
+
+.my-opening-hours-text-wrapper p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*right part */
+.my-opening-hours-image-wrapper {
+  padding: 0;
+  text-align: center;
+}
+
+.my-opening-hours-image-wrapper img {
+  width: 100%;
+  border: solid 1px var(--col-light);
+}
+
+/* ---------------------------------------- map section */
+.my-map-section {
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+/*----------------------------------------- End of home page*/

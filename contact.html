@@ -1,0 +1,259 @@
+<!-- ********************************************** 
+- Developed by: Arjun Dhakal
+- Date: 2023-02-01
+--  *********************************************** -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,400&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="Images/favicon.png" />
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/others.css" />
+  </head>
+  <body>
+    <!-- ============================================================================ Title and Navigation bar -->
+    <header>
+      <nav class="my-navbar-bg navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid my-navbar-header">
+          <a class="navbar-brand" href="#">
+            <div class="neon-wrapper">
+              <img
+                class="my-logo-icon"
+                src="Images/logo.png"
+                alt="logo image"
+              />
+              <span class="logo-txt">ABC Restaurant</span>
+              <span class="gradient"></span>
+              <span class="dodge"></span>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu-breakfast.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================================================================ category -->
+    <h1 class="my-contact-Header">Contact Form</h1>
+    <section id="contact-us-section" class="container-fluid">
+      <div class="container second-wrapper">
+        <p class="lead">We would love to hear from you.</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <form id="form-contact" action="msg-contact.html" method="get">
+              <!-- here method should be "post" but get is used just to see the success massage*/-->
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2">
+                <input
+                  type="first-name"
+                  id="first-name"
+                  placeholder="e.g. John"
+                  class="form-control"
+                  maxlength="30"
+                  required
+                />
+                <label for="fisrt-name" class="form-label">* First Name:</label>
+              </div>
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2">
+                <input
+                  type="last-name"
+                  id="last-name"
+                  placeholder="e.g. Smith"
+                  class="form-control"
+                  maxlength="30"
+                  required
+                />
+                <label for="last-name" class="form-label">* Last Name:</label>
+              </div>
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="e.g. john.smith@mail.com"
+                  class="form-control"
+                  maxlength="30"
+                  required
+                />
+                <label for="email" class="form-label">* E-mail:</label>
+              </div>
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2">
+                <input
+                  type="phone"
+                  id="phone"
+                  placeholder="e.g. 514 123 4567"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  class="form-control"
+                />
+                <label for="phone" class="form-label">Phone:</label>
+              </div>
+              <!-- ------------------------------------------ -->
+              <div class="form-floating my-2 py-1">
+                <select
+                  name="subject"
+                  id="subject"
+                  class="form-select"
+                  required
+                >
+                  <option value="">- Please select an option -</option>
+                  <option value="Reservation">Reservation</option>
+                  <option value="Events">Events</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label for="subject" class="form=label">* Subject</label>
+              </div>
+
+              <div class="form-floating my-2">
+                <textarea
+                  name="query"
+                  id="query"
+                  style="height: 150px"
+                  class="form-control"
+                  placeholder="Write a message"
+                  required
+                ></textarea>
+
+                <label for="query">Write a message</label>
+              </div>
+
+              <div class="contact-buttons">
+                <button type="submit" class="my-btn">Send Massage</button>
+                <button type="reset" class="my-btn">Cancel/Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================================ Footer-->
+    <footer id="my-footer" class="container-fluid">
+      <div class="row">
+        <div class="my-location col-lg-4 col-sm-12 my-footer-column">
+          <h3><span>Location</span></h3>
+          <img class="my-footer-logo-icon" src="Images/logo.png" alt="log" />
+          <p>1234 Street Name</p>
+          <p>Montreal, QC</p>
+          <p>Postal Code: A1B 2D3</p>
+        </div>
+        <div class="my-links col-lg-4 col-sm-12 my-footer-column">
+          <h3><span>Links</span></h3>
+          <li><a class="my-footer-nav-link" href="index.html">Home</a></li>
+          <li>
+            <a class="my-footer-nav-link" href="menu-breakfast.html">Menu</a>
+          </li>
+          <li><a class="my-footer-nav-link" href="about.html">About Us</a></li>
+          <li>
+            <a class="my-footer-nav-link current" href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <li><a class="my-footer-nav-link" href="login.html">Log In</a></li>
+        </div>
+        <div class="my-contact col-lg-4 col-sm-12 my-footer-column">
+          <h3><span>Contact Us</span></h3>
+          <div class="all-icons">
+            <span class="phone"
+              ><img
+                class="contact-icons"
+                src="Images/phone.png"
+                alt="phone icon"
+              />
+              <p>+1 514 123 4567</p></span
+            >
+            <span class="email">
+              <img
+                class="contact-icons"
+                src="Images/email.png"
+                alt="envelope icon"
+              />
+              <p>info@abd.com</p>
+            </span>
+            <span class="social-media">
+              <img
+                class="contact-icons"
+                src="Images/facebook.png"
+                alt="instagram icon"
+              />
+              <img
+                class="contact-icons"
+                src="Images/instagram.png"
+                alt="instagram icon"
+              />
+              <img
+                class="contact-icons"
+                src="Images/twitter.png"
+                alt="twitter icon"
+              />
+              <img
+                class="contact-icons"
+                src="Images/linkedin.png"
+                alt="linkedin icon"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-copyright row">
+        <hr />
+        <p>Copyright &copy; 2023 Arjun Dhakal - All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- ----------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
