@@ -91,7 +91,7 @@
 
 .contact-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .contact-buttons button {

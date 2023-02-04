@@ -58,7 +58,7 @@ h3 {
 /* navigation bar */
 .my-navbar-bg {
   background: var(--bg-color1);
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
 }
 
 .my-navbar-header {
@@ -89,7 +89,7 @@ h3 {
 }
 
 .nav-link {
-  /* margin-left: 0.75rem; */
+  margin-left: 0.75rem;
   font-family: var(--font2);
   color: var(--col-medium);
   font-weight: 500;
@@ -108,12 +108,19 @@ h3 {
   filter: brightness(150%);
 }
 
+@media (orientation: landscape) {
+  .my-navbar-bg {
+    position: static;
+  }
+}
+
 /* ========================================================== text animantion */
 .neon-wrapper {
   height: 100%;
   align-items: center;
   background-color: var(--col-heavy);
   padding: 0.5rem 1rem 0.5rem 0.5rem;
+  left: 2rem;
 }
 
 .logo-txt {
