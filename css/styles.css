@@ -131,7 +131,7 @@ h3 {
 
 /* text animation part is commented for now as it is not working correctly in few smart phone eg. Iphone 11Pro max */
 
-.logo-txt::before {
+/* .logo-txt::before {
   content: "ABC Restaurant";
   position: absolute;
   mix-blend-mode: difference;
@@ -168,22 +168,15 @@ h3 {
   right: 0;
   bottom: 0;
   mix-blend-mode: color-dodge;
-  /* animation: dodge-area 5s linear infinite; */
   animation-name: dodge-area;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
-  -webkit-animation-name: dodge-area;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes dodge-area {
   to {
-    transform: translate(50%, 50%);
-    -webkit-transform: -webkit-translate(50%, 50%);
+    transform: translate(50%, 50%);   
   }
 }
 
@@ -191,7 +184,7 @@ h3 {
   display: inline-flex;
   filter: brightness(130%);
   overflow: hidden;
-}
+} */
 /* ========================================================== footer  */
 #my-footer {
   background: var(--bg-color1);
@@ -293,14 +286,20 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   background-attachment: fixed;
-  /* box-shadow: inset 0 0 0 2000px #222831ab; */
   box-shadow: inset 0 0 0 85vh #222831ab;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: flex-end;
   animation: change 10s infinite ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .my-hero-container {
+    min-height: 100vw;
+  }
 }
 
 .my-hero-container:hover {
