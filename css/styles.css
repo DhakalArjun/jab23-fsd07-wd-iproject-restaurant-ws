@@ -183,7 +183,7 @@ h3 {
 @keyframes dodge-area {
   to {
     transform: translate(50%, 50%);
-    -webkit-transform: translate(50%, 50%);
+    -webkit-transform: -webkit-translate(50%, 50%);
   }
 }
 
