@@ -58,7 +58,8 @@ h3 {
 /* navigation bar */
 .my-navbar-bg {
   background: var(--bg-color1);
-  padding: 0 2rem 0 0;
+  /* padding: 0; */
+  padding-right: 0.5rem;
 }
 
 .my-navbar-header {
@@ -92,7 +93,7 @@ h3 {
   margin-left: 0.75rem;
   font-family: var(--font2);
   color: var(--col-medium);
-  font-weight: 500;
+  font-weight: 900;
   border: 1px solid transparent;
 }
 
@@ -125,7 +126,7 @@ h3 {
 
 .logo-txt {
   color: var(--col-light);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
   font-family: var(--font2);
 }
@@ -152,20 +153,22 @@ h3 {
 }
 
 .dodge {
-  background: radial-gradient(circle, white, #292b2c 25%) center/25% 25%;
+  background: radial-gradient(circle, white, #292b2c 35%) center/25% 25%;
   position: absolute;
   top: -100%;
   left: -100%;
   right: 0;
   bottom: 0;
+  /* z-index: -1; */
 
   mix-blend-mode: color-dodge;
-  animation: dodge-area 4s linear infinite;
+  animation: dodge-area 2s linear infinite;
 }
 
 @keyframes dodge-area {
   to {
-    transform: translate(50%, 50%);
+    /* transform: translateX(50%); */
+    transform: translate(50%, 2%);
   }
 }
 .neon-wrapper {
