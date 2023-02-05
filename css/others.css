@@ -16,6 +16,11 @@
   text-align: center;
   justify-content: flex-end;
 }
+@media screen and (max-width: 500px) {
+  .my-about-hero-container {
+    min-height: 100vw;
+  }
+}
 
 .my-about-hero-container:hover {
   box-shadow: none;
